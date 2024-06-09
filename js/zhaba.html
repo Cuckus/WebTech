@@ -1,0 +1,283 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "/TR/html4/strict.dtd">
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <title> Жаба Клава </title>
+    </head>
+
+    <body>
+        <h1> Задания 1</h1>
+        <button onclick="countName()"> Посчитать </button>
+        <script type="text/javascript">
+            function countName() {
+                var yourName = prompt("Введите своё имя");
+                alert(yourName.length)
+            }
+        </script>
+
+        <h1> Задание 2</h1>
+        <button onclick="sumNum()"> Сложить </button>
+        <script type="text/javascript">
+            function sumNum() {
+                var num1 = 3, num2 = 5, sum = num1 + num2;
+                alert(sum)
+            }
+        </script>
+
+        <h1> Задание 3</h1>
+        <button onclick="divNum()"> Разделить </button>
+        <script type="text/javascript">
+            function divNum() {
+                var num1 = 16, num2 = 2, del = num1 / num2
+                confirm(del)
+            }
+        </script>
+
+        <h1> Задание 4</h1>
+        <button onclick="ageNumConsole()"> Возраст </button>
+        <script type="text/javascript">
+            function ageNumConsole() {
+                var age = Number(prompt("Введите свой возраст"));
+                console.log(age)
+            }
+        </script>
+
+        <h1> Задание 5</h1>
+        <button onclick="my_Promt()"> Введите слово </button>
+        <script type="text/javascript">
+            function my_Promt() {
+                let str = prompt( )
+                console.log(str.substring(0, 2));
+            }
+        </script>
+
+        <h1> Задание 6</h1>
+        <button onclick="parentsPromt()"> Введите возраст своих родителей </button>
+        <script type="text/javascript">
+            function parentsPromt() {
+                var name1 = prompt("Введите имя папули");
+                var age1 = Number(prompt("Введите его возраст"));
+                var name2 = prompt("Введите имя мамули");
+                var age2 = Number(prompt("Введите её возраст"));
+                if (age1 < age2)
+                    alert(name2)
+                else alert(name1)
+            }
+        </script>
+
+        <h1> Задание 7</h1>
+        <button onclick="buyTicket()"> Купить билет </button>
+        <script type="text/javascript">
+            function buyTicket() {
+                let age = Number(prompt("Введите возраст ребенка"));
+                if (age <= 12)
+                    alert("Сиди дома")
+                else alert("Вперед за билетами")
+            }
+        </script>
+
+        <h1> Задание 8 </h1>
+        <button onclick="myPow()"> Возведение в степень </button>
+        <script type="text/javascript">
+            function myPow() {
+                let num = Number(prompt("Введите число"));
+                alert(Math.pow(num, 2))
+            }
+        </script>
+
+        <h1> Задание 9 </h1>
+        <button onclick="helloPromt()"> Поздороваться </button>
+        <script type="text/javascript">
+            function helloPromt() {
+                var name = prompt("Введите своё имя");
+                alert("Доброго здоровечка," +name);
+            }
+        </script>
+
+        <h1> Задание 10 </h1>
+        <button onclick="div_4()"> Деление на 4 </button>
+        <script type="text/javascript">
+            function div_4() {
+                var num = prompt("Введите число");
+                if (num % 4 == 0)
+                    alert("Выражение истинно");
+                else
+                    alert("Выражение ложно");
+            }
+        </script>
+
+        <h1> Задание 11 </h1>
+        <button onclick="findPer()"> Рассчитать периметр </button>
+        <script type="text/javascript">
+            function P(a, b) {
+                return (a*2 + b*2)
+            }
+            function findPer() {
+                var a = prompt("Введите длину (a)");
+                var b = prompt("Ведите ширину (b)");
+                alert (P(a, b));
+            }
+        </script>
+
+        <h1> Задание 12 </h1>
+        <button onclick="fCicl()"> Цифра в консоль </button>
+        <script type="text/javascript">
+            function fCicl() {
+                for (var i = 1; i < 10; ++i) {
+                }
+                console.log(i);
+            }
+        </script>
+
+        <h1> Задание 13 </h1>
+        <button onclick="manyCicl()"> Цифры в консоль </button>
+        <script type="text/javascript">
+            function manyCicl() {
+                for (var i = 5; i <= 50; i += 5) {
+                    console.log(i);
+                }
+            }
+        </script>
+
+        <h1> Задание 14 </h1>
+        <button onclick="fWhile()"> Цифра в консоль (while) </button>
+        <script type="text/javascript">
+            function fWhile() {
+                var i = 1
+                while (i < 10) {
+                    i++;
+                }
+                console.log(i)
+            }
+        </script>
+
+        <h1> Задание 15 </h1>
+        <button onclick="manyWhile()"> Цифры в консоль (while) </button>
+        <script type="text/javascript">
+            function manyWhile() {
+                var i = 5
+                while (i <= 50) {
+                    console.log(i)
+                    i += 5
+                }
+            }
+        </script>
+
+        <h1> Задание 16 </h1>
+        <button onclick="cicleCount()"> Russians don't give up </button>
+        <script type="text/javascript">
+            function cicleCount() {
+                for (var i = 5; i >= 0; i--) {
+                    if (i < 1)
+                        alert("Нас не задушишь, не убьёшь")
+                }
+            }
+        </script>
+
+        <h1> Задание 17 </h1>
+        <button onclick="tastePromt()"> Меню </button>
+        <script type="text/javascript">
+            function tastePromt() {
+                var name = prompt("Чего хотите?");
+                switch (name) {
+                    case "яблоко": console.log("Ваш выбор " + name + " просто идеален")
+                    break
+                    case "апельсин": console.log("Ваш выбор " + name + " просто идеален")
+                    break
+                    case "пиво": console.log("Ваш выбор " + name + " просто идеален")
+                    break
+                    case "сок": console.log("Ваш выбор " + name + " просто идеален")
+                    break
+                    default: console.log("Пошёл прочь!")
+                }
+            }
+        </script>
+
+        <h1> Задание 18 </h1>
+        <button onclick="threeEl()"> Третий элемент массива </button>
+        <script type="text/javascript">
+            function threeEl() {
+                var arr = [7, 8, 1, 21, 2]
+                alert(arr[2])
+            }
+        </script>
+
+        <h1> Задание 19 </h1>
+        <button onclick="arrayLength()"> Длина массива </button>
+        <script type="text/javascript">
+            function arrayLength() {
+                var arr = [7, 8, 1, 21, 2]
+                alert(arr.length)
+            }
+        </script>
+
+        <h1> Задание 20 </h1>
+        <button onclick="numArray()"> Значение массива </button>
+        <script type="text/javascript">
+            function numArray() {
+                var arr = [7, 8, 1, 21, 2]
+                alert(arr)
+            }
+        </script>
+
+        <h1> Задание 21 </h1>
+        <button onclick="elArray()"> Элементы массива </button>
+        <script type="text/javascript">
+            function elArray() {
+                var arr = new Array();
+                arr = [7, 8, 1, [1, 2, 3], 21, 2]
+                alert(arr)
+            }
+        </script>
+
+        <h1> Задание 22 </h1>
+        <button onclick="addPhone()"> Телефонка </button>
+        <script type="text/javascript">
+            function addPhone() {
+                var tel = {
+                    name1: "Волкова Юлька Романыча",
+                    num1: 89919526836,
+                    name2: "Скворцова Настаська Алексовна",
+                    num2: 89252080908,
+                }
+                alert(tel.name1 +" "+ tel.num1 +"\n" + tel.name2+ " " + tel.num2)
+            }
+        </script>
+
+        <h1> Задание 23 </h1>
+        <button onclick="strPromt()"> Свойства </button>
+        <script type="text/javascript">
+            function strPromt() {
+                var me = new Object()
+                me = {
+                    name: "11010000 10111010 11010001 10000011 11010000 10111010 11010001 10000011 11010001 10000001 11010001 10001100",
+                    height: 167,
+                    weight: 77,
+                    skin: "#ffdfc4",
+                    eyes_color: "rgb(112,73,61)"    
+                };
+                for (var key in me) {
+                    alert(key)
+                }
+            }
+        </script>
+
+        <h1> Задание 24 </h1>
+        <button onclick="strElPromt()"> Значение свойств </button>
+        <script type="text/javascript">
+            function strElPromt() {
+                var me = new Object()
+                me = {
+                    name: "11010000 10111010 11010001 10000011 11010000 10111010 11010001 10000011 11010001 10000001 11010001 10001100",
+                    height: 167,
+                    weight: 77,
+                    skin: "#ffdfc4",
+                    eyes_color: "rgb(112,73,61)"
+                }
+                for (var key in me) {
+                    alert(me[key])
+                }
+            }
+        </script>
+    </body>
+</html >
